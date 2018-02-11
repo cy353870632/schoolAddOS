@@ -1,0 +1,156 @@
+//
+//  Header.pch
+//  
+//
+//  Created by 程远 on 16/7/7.
+//
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define cellIdentifier (@"cell")//cell的重用标识符
+//屏幕尺寸
+#define MAINSCREEN [UIScreen mainScreen].bounds.size
+//偏好设置
+#define MSUserDefaults [NSUserDefaults standardUserDefaults]
+//通知中心
+#define MSNotificationCenter [NSNotificationCenter defaultCenter]
+//button的蓝色
+#define blue_color [UIColor colorWithRed:0.200 green:0.472 blue:1.000 alpha:1.000]
+#define red_color [UIColor colorWithRed:1.0 green:97/255 blue:0.0 alpha:1.000]
+#define gray_color [UIColor colorWithWhite:0.552 alpha:1.000]
+#define Q_gray_color [UIColor colorWithWhite:0.805 alpha:1.000]
+#define green_color [UIColor colorWithRed:0.400 green:0.800 blue:0.472 alpha:1.000]
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define KNOTIFICATION_LOGINCHANGE @"loginStateChange"
+
+#define CHATVIEWBACKGROUNDCOLOR [UIColor colorWithRed:0.936 green:0.932 blue:0.907 alpha:1]
+
+//朋友圈所需参数
+#define WeakSelf  __weak __typeof(&*self)weakSelf = self;
+#define KEYWINDOW [UIApplication sharedApplication].keyWindow
+#define RGB16(rgbValue)\
+\
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0]
+
+#define RGB16(rgbValue)\
+\
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0]
+#define kGrayColor  RGBCOLOR(196, 197, 198)
+#define kGreenColor RGBCOLOR(0, 201, 144)
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <Masonry.h>
+//朋友圈所需参数
+
+#import "AppDelegate.h"
+
+#import "CustomViewController.h"//自定义的父类controller
+#import "CustomView.h"//自定义的父类view
+#import "CustomNavigationConroller.h"//自定义navigation
+#import "GrayBackgroundView.h"//灰色背景页
+#import "GradeExamViewController.h"
+#import "NewsNoticeViewController.h"
+#import "ShoppingViewController.h"
+#import "IMViewController.h"
+#import "CrcleViewController.h"
+#import "PublishCrcleViewController.h"//发布朋友圈页面
+#import "ChildChooseView.h"//成绩页下拉选择孩子页面
+#import "ChildChooseTableViewCell.h"//下拉选择孩子tablecell
+#import "PersonView.h"//个人中心页面
+#import "PersonTableViewCell.h"//个人中心cell
+#import <MobileCoreServices/MobileCoreServices.h>//手机核心服务，用来制定媒体格式
+#import "GradeView.h"//首页成绩view
+#import "GradeListCellTableViewCell.h"
+#import "SingleGradeViewController.h"//单科点评页面
+#import "KaoShangChooseView.h"//单科点评页面，选择犒赏view
+#import "GradeBaoGaoViewController.h"//成绩报告页面
+#import "GradeBaoGaoView.h"//成绩报告view
+#import "GradeBaoGaoCell.h"//报告cell
+#import "PeiXunViewForGradeView.h"//成绩页的最下方培训推荐模块
+#import "Marquee.h"//考试安排的跑马灯滚动条
+#import <AVFoundation/AVFoundation.h>
+#import "HomeWorkViewController.h"//作业
+#import "HomeWrokTableViewCell.h"
+#import "HomeWorkView.h"//作业view
+#import "HomeWorkMessageCell.h"//作业详情
+#import "NewsTableViewCell.h"
+#import "NewsView.h"
+#import "LCTabBarController.h"
+#import "HomeWorkMessageViewController.h"//作业详情页
+#import "BasicsMessageViewController.h"//基本资料控制器
+#import "BasicsMessageView.h"//基本资料页面
+#import "BasicsMessageStudentBangdingView.h"//绑定学生情况view，基本资料页
+#import "ErWeiMaView.h"
+#import "ShoppingTableViewCell.h"//首页产品tableviewcell
+#import "LeavingViewController.h"//请假
+#import "LeavingView.h"
+#import "LeavingTableViewCell.h"
+#import "LeavingMessageViewController.h"//请假详情
+#import "JGPicker.h"//带有时间的日历选择器
+#import "AddLeavingViewController.h"//新增请假
+#import "YBUnlimitedSlideViewController.h"//滚动轮播
+#import "ShoppingScrollerView.h"
+#import "ShoppingFenLeiShowViewController.h"//逛逛点击分类进入
+#import "ShoppingFenLeiView.h"//逛逛分类view
+#import "ShaiXuanTiaoJianTableViewCell.h"//逛逛筛选下cell，如价格排序，距离选择
+#import "StudentBingdingViewController.h"//学生绑定页面
+#import "StudentBingDingView.h"
+#import "CityViewController.h"//城市选择
+#import "SchoolChooseView.h"//学校选择
+#import "CancelBingDingViewController.h"//取消绑定
+#import "CancelBingDIngView.h"
+#import "MyOrderViewController.h"//我的订单
+#import "MyOrderView.h"
+#import "OrderTableViewCell.h"
+#import "ShouCangViewController.h"//收藏
+#import "ShouCangView.h"
+#import "HistoryGradeViewController.h"
+#import "HistoryGradeView.h"
+#import "HistoryGradeTableViewCell.h"
+#import "MyOrderMessageViewController.h"
+#import "NoticeView.h"
+#import "NoticeViewController.h"
+#import "NoticeMessageViewController.h"//通知详情
+#import "HistoryMessageViewController.h"
+#import "HistoryMessageView.h"
+#import "MZGuidePages.h"//欢迎页
+#import "LoginViewController.h"
+#import "LoginTypeView.h"//登录页选择button页面
+#import "LoginMessageView.h"
+#import "TeacherSuggestViewController.h"//教师推荐
+#import "TeacherSuggestView.h"
+#import "GradeCeshiView.h"
+#import "JKCountDownButton.h"//倒计时button
+#import "EWMView.h"//生成二维码
+//讯飞语音
+#import <iflyMSC/iflyMSC.h>
+//环信
+#import "EaseMob.h"
+#import <EaseMob.h>
+#import "UBMessageViewController.h"
+////第三方
+//#import "MJRefresh.h"
+//#import "MJRefreshHeader.h"
+//#import "MJRefreshFooter.h"
+//#import "FMDB.h"
+//#import "NSLog.h"
+#import "Toast+UIView.h"//仿安卓吐司提示
+
+#endif /* Header_pch */
+
+

@@ -1,0 +1,111 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMap3DMap (4.4.0):
+    - AMapFoundation (~> 1.3)
+  - AMapFoundation (1.3.1)
+  - AMapLocation (2.1.1):
+    - AMapFoundation (~> 1.2)
+  - AVOSCloud (3.6.1)
+  - DACircularProgress (2.3.1)
+  - DateTools (1.7.0)
+  - EaseMobSDKFull (2.3.2)
+  - FDFullscreenPopGesture (1.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MMiflyMSC (0.0.5)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+  - ODRefreshControl (1.2)
+  - Reveal-iOS-SDK (1.6.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - YTKKeyValueStore (0.1.2):
+    - FMDB (~> 2.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - AMap3DMap
+  - AMapLocation
+  - AVOSCloud
+  - DateTools
+  - EaseMobSDKFull (from `https://github.com/easemob/sdk-ios-cocoapods-integration.git`)
+  - FDFullscreenPopGesture (~> 1.1)
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - MMiflyMSC
+  - MWPhotoBrowser (~> 2.1.2)
+  - NJKWebViewProgress
+  - ODRefreshControl (~> 1.2)
+  - Reveal-iOS-SDK
+  - SDWebImage (~> 3.8)
+  - YTKKeyValueStore
+
+EXTERNAL SOURCES:
+  EaseMobSDKFull:
+    :git: https://github.com/easemob/sdk-ios-cocoapods-integration.git
+
+CHECKOUT OPTIONS:
+  EaseMobSDKFull:
+    :commit: 988e9f33e408e50981d45f971a14681815cd517f
+    :git: https://github.com/easemob/sdk-ios-cocoapods-integration.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AMap3DMap: c3f6aa63aea668e34f88c7beea69167ef6e8f1a2
+  AMapFoundation: 636834a27cd003084f56b4232f3031e6a44c7e7e
+  AMapLocation: dd203f76b034ef5cb546600f4e1ffad2a3a14072
+  AVOSCloud: cc9b567da2d30f07e3da1e4db682cad9ff56a1b6
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  EaseMobSDKFull: 8649d2f2c9d37507baf4834a622bcbf0a982877f
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MMiflyMSC: d73ae9a75616ffda903114a0eee66f9bec080fe4
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
+
+PODFILE CHECKSUM: 727ae88c2ab698465e308c9325c368bea2c96acf
+
+COCOAPODS: 1.1.1
