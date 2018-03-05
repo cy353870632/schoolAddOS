@@ -3011,7 +3011,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RZ8Q549NK5;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/chengyuan/Desktop/java/XiaoJia/XiaoJia/customFile/header/Header.pch;
+				GCC_PREFIX_HEADER = /Users/chengyuan/Desktop/SchoolAdd/schoolAddOS/XiaoJia/customFile/header/Header.pch;
 				INFOPLIST_FILE = XiaoJia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3037,7 +3037,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RZ8Q549NK5;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/chengyuan/Desktop/java/XiaoJia/XiaoJia/customFile/header/Header.pch;
+				GCC_PREFIX_HEADER = /Users/chengyuan/Desktop/SchoolAdd/schoolAddOS/XiaoJia/customFile/header/Header.pch;
 				INFOPLIST_FILE = XiaoJia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

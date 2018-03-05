@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //获取当前控制器名称
+    NSLog(@"当前控制器    %@",NSStringFromClass([self class]));
     self.view.backgroundColor = [UIColor whiteColor];
 }
 -(void)hiddenTabbarController{
